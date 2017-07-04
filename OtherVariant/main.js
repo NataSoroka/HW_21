@@ -6,25 +6,10 @@ window.onload = function() {
         mouseX = event.offsetX;
         mouseY = event.offsetY;
 
-
-
         rect = block.getBoundingClientRect();
 
         left = Math.floor(rect.left);
         top = Math.floor(rect.top);
-
-        // console.log(left);
-        // console.log(top);
-
-        // console.log("Мышка Х = " + mouseX, "Блок слева = " + (left - 50));
-        // console.log("Мышка по У = " + mouseY, "Блок сверху = " + (top - 50));
-
-        // console.log("Подход к блоку по Х " + (mouseX == (left - 50)));
-        // console.log("В пределах блока по У от верха " + (mouseY > top));
-        // console.log("В пределах блока по У от низа " + (mouseY < (top + 200)));
-
-        console.log(mouseX < left);
-
 
 
         if ((mouseX < left) && (mouseX > (left - 100)) && (mouseY > top) && (mouseY < (top + 200))) {
